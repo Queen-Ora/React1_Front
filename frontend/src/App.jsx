@@ -1,6 +1,8 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Signup from './pages/Signup/Signup'
+import OTP from './pages/OTP/OTP'
+import Dashboard from './pages/Dashboard/Dashboard'
 
 export default function App() {
   const route = createBrowserRouter([
@@ -9,8 +11,11 @@ export default function App() {
   path: '/',
   element: <Signup />,
 },{
-  path: '/about',
-  element: <h1>About Page</h1>,
+  path: '/otp',
+  element: <OTP />
+},{
+  path:'/home',
+  element: <Dashboard />,
 }
 
 
